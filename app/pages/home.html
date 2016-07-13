@@ -1,0 +1,21 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %} 
+
+<!-- Importing Nunjucks Macro -->
+{% import 'macros/banner.nunjucks' as nav %}
+{{nav.active('home')}}
+		<!-- Main -->
+
+			<div id="content" class="container">
+
+				<!-- Intro -->
+				{% for post in posts %}
+				<div id="main_image">
+					<img src="{{post.thumbnail}}"/>
+					<h2 class="right_bottom">{{post.title}}</h2>
+				</div>	
+				{% endfor %}
+
+			</div>
+{% endblock %}
