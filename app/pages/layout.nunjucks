@@ -15,18 +15,10 @@
   <!-- You write code for this content block in another file -->
   {% block content %} {% endblock %}
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-				</div>
-				
-			</footer>
+
 
 		<!-- Scripts -->
 	<script src="/js/jquery-2.1.4.min.js"></script>
-
-		
-
 
 	</body>
 </html>

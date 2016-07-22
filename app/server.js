@@ -19,6 +19,7 @@ app.listen( process.env.PORT || 3000);
 
 //GET data from wordpress
 var data = require('./data')
+//console.log(data);
 
 
 // define rendering engine
@@ -29,11 +30,19 @@ nunjucks.configure(['/pages','pages'], {
 
 
 app.get('/', function (req, res) {
-    data(function(results){
+    data.getWPPages(function(results){
+      res.render('home.html',{
+      posts : results.pages
+      })
+      //console.log(results);
+      console.log(results.pages[0])
+    })
+});
+
+app.get('/artdirection', function (req, res) {
+    data.getWPPosts(function(results){
       res.render('home.html',{
       posts : results.posts
       })
-    })  
-  
+    })
 });
-

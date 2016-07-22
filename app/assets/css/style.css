@@ -1,5 +1,107 @@
 body {
   font: 100% "Lato", sans-serif;
-  width: 980px; }
+  max-width: 1200px;
+  margin: 0 auto; }
+
+#main {
+  margin: 0 40px 20px 40px; }
+
+#row {
+  width: 100%;
+  margin-bottom: 140px;
+  display: inline-block; }
+
+#halfrow {
+  margin-left: 140px;
+  display: inline-block; }
+
+#header {
+  width: 360px; }
+
+.box, #artd, #advert, #brand, #edit, #photo {
+  position: relative;
+  display: inline-block; }
+
+h1 {
+  font-size: 60px;
+  letter-spacing: 0.025em;
+  line-height: 105%;
+  font-weight: 300; }
+
+h2 {
+  font-size: 24px;
+  letter-spacing: 0.025em;
+  line-height: 125%;
+  font-weight: 300; }
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 100%;
+  font-size: 9px;
+  letter-spacing: 0.20em; }
+
+.title {
+  position: absolute;
+  z-index: 100;
+  top: 0; }
+
+#artd {
+  float: left; }
+
+#artd .title {
+  right: -105px; }
+
+#advert {
+  width: 426px;
+  float: left; }
+
+#advert .title {
+  right: 35px;
+  top: -37px; }
+
+#brand {
+  width: 300px;
+  margin-bottom: 140px; }
+
+#brand .title {
+  right: 0px; }
+
+#edit {
+  width: 410px;
+  display: inline; }
+
+#edit .title {
+  right: -375px;
+  top: -320px; }
+
+#photo {
+  float: right;
+  margin-right: 140px; }
+
+#photo .title {
+  left: -102px;
+  top: 5px; }
+
+#info {
+  width: 23.5%;
+  display: inline-block;
+  float: left; }
+
+.infosection {
+  margin-bottom: 40px; }
+
+a.info {
+  line-height: 234%;
+  letter-spacing: 0.025em;
+  font-size: 14px; }
+
+#about {
+  width: 37%;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  line-height: 128%;
+  margin-top: 28px; }
 
 /*# sourceMappingURL=style.css.map */

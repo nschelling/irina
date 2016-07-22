@@ -1,21 +1,87 @@
 {% extends "layout.nunjucks" %}
 
-{% block content %} 
+{% block content %}
 
 <!-- Importing Nunjucks Macro -->
 {% import 'macros/banner.nunjucks' as nav %}
 {{nav.active('home')}}
 		<!-- Main -->
 
-			<div id="content" class="container">
+	<div id="content" class="container">
 
 				<!-- Intro -->
-				{% for post in posts %}
-				<div id="main_image">
-					<img src="{{post.thumbnail}}"/>
-					<h2 class="right_bottom">{{post.title}}</h2>
-				</div>	
-				{% endfor %}
 
+				<div id="row">
+					<div id="artd">
+							<div class="image">
+									<img src="{{posts[1].thumbnail}}"/>
+							</div>
+							<div class="title">
+								<h2>{{posts[1].title}}</h2>
+							</div>
+				</div>
 			</div>
+			<div id="row">
+				<div id="advert">
+						<div class="image">
+								<img src="{{posts[3].thumbnail}}"/>
+						</div>
+						<div class="title">
+							<h2>{{posts[3].title}}</h2>
+						</div>
+				</div>
+				<div id="halfrow">
+						<div id="brand">
+								<div class="image">
+										<img src="{{posts[2].thumbnail}}"/>
+								</div>
+								<div class="title">
+									<h2>{{posts[2].title}}</h2>
+								</div>
+						</div>
+						<div id="edit">
+								<div class="image">
+										<img src="{{posts[4].thumbnail}}"/>
+								</div>
+								<div class="title">
+									<h2>{{posts[4].title}}</h2>
+								</div>
+						</div>
+					</div>
+			</div>
+			<div id="row">
+				<div id="photo">
+						<div class="image">
+								<img src="{{posts[5].thumbnail}}"/>
+						</div>
+						<div class="title">
+							<h2>{{posts[5].title}}</h2>
+						</div>
+				</div>
+			</div>
+	</div>
+
+	<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+				<div id="info">
+					<div class="infosection">
+						<h3>Email</h3>
+						<a href="" class="info">hey@irinanisimova.com</a>
+					</div>
+					<div class="infosection">
+						<h3>Tumblr</h3>
+						<a href="" class="info">/irinanisimova</a>
+					</div>
+					<div class="infosection">
+						<h3>Instagram</h3>
+						<a href="" class="info">irinanisimova</a>
+					</div>
+				</div>
+				<div id="about">
+				{{posts[0].content}}
+				<div>
+			</div>
+
+		</footer>
 {% endblock %}

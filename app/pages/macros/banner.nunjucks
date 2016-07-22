@@ -3,8 +3,8 @@
 			<div id="main" class="container">
 				<!-- Header -->
 			<header id="header">
-				<h1>Irina Anissimova</h1>
-			
+				<h1>Irina Anissimova -</h1>
+
 			</header>
-			
+
 {% endmacro %}
